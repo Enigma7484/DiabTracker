@@ -3,10 +3,11 @@ import axios from 'axios';
 
 const App = () => {
   const [output, setOutput] = useState('');
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     // Make the API request to your Flask backend
-    axios.get('https://diab-tracker.onrender.com')
+    axios.get(BACKEND_URL)
       .then(response => {
         setOutput(response.data);
       })
