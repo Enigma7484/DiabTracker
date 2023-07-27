@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     // Make the API request to your Flask backend
-    axios.get('http://localhost:5000')
+    axios.get('https://diab-tracker.onrender.com/')
       .then(response => {
         setOutput(response.data);
       })
