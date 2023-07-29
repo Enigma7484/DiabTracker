@@ -10,7 +10,8 @@ def run_other_file():
     try:
         result = subprocess.run(["python", "DiabTracker.py"], capture_output=True, text=True)
         output = result.stdout
-        response_text = f"<pre>{output}</pre>"
+        error_output = result.stderr
+        response_text = f"<pre>{output}\n\nError Output:\n{error_output}</pre>"
         return response_text
     except Exception as e:
         return f"Error: {e}"

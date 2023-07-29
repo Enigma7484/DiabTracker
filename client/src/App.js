@@ -19,6 +19,7 @@ const App = () => {
   return (
     <div>
       <h1>Output from Flask backend:</h1>
+      
       <pre>{output}</pre>
     </div>
   );
