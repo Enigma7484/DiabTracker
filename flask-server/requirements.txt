@@ -3,3 +3,4 @@ flask_sqlalchemy
 gunicorn==19.7.1
 scikit-learn
 flask_cors
+pandas
