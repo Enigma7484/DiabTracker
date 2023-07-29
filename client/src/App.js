@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Output from Flask backend:</h1>
+      <h1>Below is the data that is read from the .csv file I have in my repo and the prediction based on the data whether the person has Diabetes or not is at the very bottom. I had worked on the backend of this project and could only get the result in the terminal. I recently worked on the project so that the output can be presented on the browser.</h1>
       
       <pre>{output}</pre>
     </div>
